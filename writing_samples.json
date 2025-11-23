@@ -1,0 +1,45 @@
+    [
+  {
+    "id": "sample_1",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "Tell us about a cause that resonates with you.",
+    "content": "Over the past 4 years I have worked with multiple non-profit organizations to support different causes. I used to work as a blog writer for an organization called FinerFutureFoundation, at that position my role was to write blogs and raise awareness about homelessness and its different aspects. I had written 20+ blogs garnering over 2600+ views cumulatively. At the same time I was also working with my local soccer club, where I had to play soccer and connect with children diagnosed with down syndrome. Although it was just one hour a week it was the highlight of my week. Lastly, I worked as a Graphic Designer for an organization called Dawn who worked towards human trafficking. In my role I researched and created social media posts to raise awareness about the topic. In conclusion, I’ve never belonged to a cause but some cause has always belonged to me. I am excited and curious to see what Blueprint holds for me and how I can use my skills to make society a better place."
+  },
+  {
+    "id": "sample_2",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "Tell us about a community you’re proud to be a part of and how you’ve contributed to it.",
+    "content": "Out of all the communities I’ve been involved with, I’m most proud of my work with FinerFutureFoundation, where I was able to make a meaningful impact. It was founded by a bunch of highschoolers and I joined it in grade 11. I started as a blog writer but along with my responsibility I was very interested and wanted to participate in other events they were doing. For example, during Halloween of 2023 they organized a charity bake sale and card-making drive for the homeless. I asked my team leader if I could help in some way and she kindly included me. Then along with some other members I went door to door explaining our cause and raising money. Then we came back and helped the others in the bake sale and made the cards together. In the end, our hard work was worth it and we actually helped real homeless people and I myself raised awareness about the issue as my articles gained 2600+ views cumulatively. I aspire to collaborate with peers on blueprint and create meaningful things."
+  },
+  {
+    "id": "sample_3",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "Tell us about a time you learned a new skill. What was your motivation to learn it and what was your approach?",
+    "content": "In late September, my friend and I tried out for the Wato design team. We had to complete a project which was basically coding a robot. Since it required hardware-level programming, I had to learn C# and ROS2 all in a week. While it seemed daunting, I was motivated as it seemed like If I could succeed in this challenge it would boost my confidence and I might even get into a design team. To begin with, I opened chatgpt and started talking to it and tried to grasp as much as possible. After getting familiar with basic concepts and syntax I started coding the robot and testing every small step to understand it. At every hurdle I would figure out what's wrong and make a note of it. I locked in for 3-4 days in MC and completed my part before the deadline. In conclusion, whenever I want to learn a new skill, I use Ai to get a headstart, then try the thing myself consistently and make a note of my mistakes and in the end apply it in real world problems to actually have an impact."
+  },
+  {
+    "id": "sample_4",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "Tell us why you want to be a Project Developer on Blueprint!",
+    "content": "For the past two years, I have been exploring computer science both as a hobby and as a prospective career. In this process I went to different hackathons and made various projects that were aimed at solving real problems. The number of people that I can impact with my work gets so broad with computer science. At Blueprint I can connect with people who are much more experienced than me and I can collaborate with them to create solutions for projects like Food4kids, Better Angels La and many more which help people in need. I’m also excited to get guidance from my seniors in the club which can greatly help me during my co-op job search and becoming a better developer. Working at blueprint will also give me an experience of how a project is planned from scratch and how actual production level code is written, maintained and scaled. In conclusion, joining the blueprint community would be an honour for me and I won’t take it for granted, I will put it in the work needed to help my team."
+  },
+  {
+    "id": "sample_5",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "Tell us about a challenging technical problem you’ve solved.",
+    "content": "When I was developing TheraPlay, a web app for helping people with issues like anxiety through interactive games, I faced several technical challenges. The problems included keeping the turns synchronized between two users, efficiently matching users based on selected tags and availability, handling network issues, disconnects, or users leaving mid-game breaking the session for the other user. To solve these problems I implemented a system where users were added to a queue and I designed logic on how to prioritize matching. I also implemented a state management system where each user’s actions were synced to a shared session object in realtime. I added logic to detect disconnections if someone left midway the other user could continue or be rematched. This resulted in players getting matched in seconds, and the real time game loop ran without any issues even with network delays. This experience helped me improve my understanding of building scalable, reliable and user-centered systems."
+  },
+  {
+    "id": "sample_6",
+    "source": "application_question",
+    "date": "2025-11",
+    "prompt": "How would you pitch to external organizations for sponsorship?",
+    "content": "I have previously worked for an organization called Focus Youth where my role was exactly finding sponsorships for an event. In that situation I was pitching an event with a footfall of around 100 high schoolers to businesses. Since the offer was not too lucrative for businesses, I adopted a broad outreach strategy. I talked to about 150 businesses and got 1 sponsor in the end. I learned the importance of perseverance from this venture. However, when I pitch for the blueprint club I can offer much more incentive to the sponsors to invest. I would make sure we research our sponsors and submit a slightly varied offer to every potential sponsor to meet their needs. Apart from that, following up every sponsor multiple times and trying to understand their mindset and if possible tweak our offer to increase the chance of closure would also be a priority. In conclusion, my approach would be centered around research, customization and strategic negotiation to build lasting relationships."
+  }
+]
+
