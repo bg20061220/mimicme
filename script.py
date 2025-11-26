@@ -2,9 +2,7 @@ import json
 from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.utils import embedding_functions
-from openai import OpenAI
-import os
-
+import requests
 
 # -------------------------------
 # 1. Load JSON data
@@ -15,7 +13,6 @@ with open("experiences.json", "r") as f:
 with open("writing_samples.json", "r") as f:
     writing_samples = json.load(f)
 
-
 # -------------------------------
 # 2. Embedding function (local HF model)
 # -------------------------------
@@ -24,13 +21,12 @@ hf_model = SentenceTransformer("all-MiniLM-L6-v2")
 def local_embedding_fn(texts):
     return hf_model.encode(texts, convert_to_numpy=True).tolist()
 
-
 # -------------------------------
 # 3. ChromaDB Setup
 # -------------------------------
 client = chromadb.Client()  # local in-memory DB
 
-# Create OR load collections
+# Create or load collections
 try:
     exp_collection = client.get_collection("experiences")
 except:
@@ -41,38 +37,34 @@ try:
 except:
     writing_collection = client.create_collection("writing_samples")
 
-
 # Populate DB if empty
 if exp_collection.count() == 0:
     exp_collection.add(
         documents=[e["description"] for e in experiences],
-        ids=[e["id"] for e in experiences]
+        ids=[e["id"] for e in experiences],
+        embeddings=local_embedding_fn([e["description"] for e in experiences])
     )
 
 if writing_collection.count() == 0:
     writing_collection.add(
         documents=[w["content"] for w in writing_samples],
-        ids=[w["id"] for w in writing_samples]
+        ids=[w["id"] for w in writing_samples],
+        embeddings=local_embedding_fn([w["content"] for w in writing_samples])
     )
 
-
 # -------------------------------
-# 4. OpenAI Client
-# -------------------------------
-clientai = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-
-# -------------------------------
-# 5. Retrieval function
+# 4. Retrieval function
 # -------------------------------
 def retrieve_relevant(question, top_exp=3, top_write=2):
     exps = exp_collection.query(
         query_texts=[question],
-        n_results=top_exp
+        n_results=top_exp,
+        include=["documents"]
     )
     samples = writing_collection.query(
         query_texts=[question],
-        n_results=top_write
+        n_results=top_write,
+        include=["documents"]
     )
 
     exp_texts = exps["documents"][0]
@@ -80,11 +72,10 @@ def retrieve_relevant(question, top_exp=3, top_write=2):
 
     return exp_texts, writing_texts
 
-
 # -------------------------------
-# 6. Answer Generation (OpenAI API v1.33.0)
+# 5. Generate answers via cloud-hosted model
 # -------------------------------
-def generate_answers(question, exp_texts, writing_texts, n_answers=3):
+def generate_answers_cloud(question, exp_texts, writing_texts, n_answers=2):
     context = (
         "Relevant Experiences:\n" +
         "\n".join(exp_texts) +
@@ -92,33 +83,26 @@ def generate_answers(question, exp_texts, writing_texts, n_answers=3):
         "\n".join(writing_texts)
     )
 
-    prompt = (
-        f"Use the writing style and experiences below to answer the question.\n\n"
-        f"{context}\n\n"
-        f"Question: {question}\n\n"
-        f"Generate {n_answers} unique responses."
-    )
+    payload = {
+        "question": question,
+        "context": context,
+        "n_answers": n_answers
+    }
 
-    response = clientai.responses.create(
-        model="gpt-4o-mini",
-        input=prompt
-    )
+    # Replace with your cloud model URL
+    response = requests.post("https://your-model-server.com/generate", json=payload)
+    response.raise_for_status()  # raise error if request fails
 
-    outputs = response.output_text.split("\n")
-
-    # Clean: keep only non-empty lines
-    answers = [line.strip() for line in outputs if line.strip()]
-
-    return answers[:n_answers]
-
+    return response.json()["answers"]
 
 # -------------------------------
-# 7. Run Example
+# 6. Example usage
 # -------------------------------
-question = "Tell us about a time you learned a new skill"
+if __name__ == "__main__":
+    question = "Tell us about a time you learned a new skill"
 
-exp_texts, writing_texts = retrieve_relevant(question)
-answers = generate_answers(question, exp_texts, writing_texts)
+    exp_texts, writing_texts = retrieve_relevant(question)
+    answers = generate_answers_cloud(question, exp_texts, writing_texts)
 
-for i, ans in enumerate(answers, 1):
-    print(f"\nANSWER {i}:\n{ans}\n")
+    for i, ans in enumerate(answers, 1):
+        print(f"\nANSWER {i}:\n{ans}\n")
