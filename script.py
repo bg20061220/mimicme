@@ -4,7 +4,7 @@ import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 import json 
 
-genai.configure(api_key="AIzaSyCBxPZtYKRvq2P3EoDvOBMC8F_KmO-JXMU")
+genai.configure(api_key="REMOVED")
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
