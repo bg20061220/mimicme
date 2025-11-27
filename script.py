@@ -99,10 +99,13 @@ def generate_answers_cloud(question, exp_texts, writing_texts, n_answers=2):
 # 6. Example usage
 # -------------------------------
 if __name__ == "__main__":
-    question = "Tell us about a time you learned a new skill"
+    question = "Tell us about a time you solved a technical problem "
 
     exp_texts, writing_texts = retrieve_relevant(question)
-    answers = generate_answers_cloud(question, exp_texts, writing_texts)
+    print( "Exp Tests: ")
+    for i , text in enumerate(exp_texts , 1):
+        print(f"{i}: {text}\n")
 
-    for i, ans in enumerate(answers, 1):
-        print(f"\nANSWER {i}:\n{ans}\n")
+    print("Writing texts:")
+    for i , text in enumerate(writing_texts , 1): 
+        print(f"{i} : {text}\n")
