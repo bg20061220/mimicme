@@ -1,152 +1,447 @@
 [{
   "id": "exp_autoval",
-  "title": "AutoVal: Used Car Sales Prediction & Dashboard",
-  "date": "2025-04 to 2025-06",
-  "context": "non-profit (DataKind) project + peer collaboration",
-  "description": "Developed AutoVal, an end-to-end data science solution designed to help a nonprofit understand second-hand car pricing dynamics. The project included a Power BI dashboard, a machine learning prediction tool, and a detailed insights report.",
-  "actions": "Built the entire data pipeline, cleaned and structured the dataset, engineered features, conducted exploratory data analysis, and trained a Random Forest model for price prediction. Developed a Streamlit web application enabling real-time price estimates. Created a Power BI dashboard to visualize key trends such as fuel type distribution, ownership history, kilometers driven, imperfections, and repainting. Synthesized findings into a comprehensive insights report for nonprofit stakeholders. Worked independently while regularly collaborating with a peer group to exchange ideas and receive feedback.",
-  "skills": [
-    "Python",
-    "Pandas",
-    "NumPy",
-    "Seaborn",
-    "Matplotlib",
-    "scikit-learn",
-    "Data Cleaning",
-    "Feature Engineering",
-    "Random Forest",
-    "Streamlit",
-    "Power BI",
-    "Dashboarding",
-    "Data Pipelines",
-    "Collaboration",
-    "Communication"
+  "type": "role",
+  "source": "volunteer",
+  "title": "Data Analyst, DataKind",
+  "date_range": "2025-04 to 2025-06",
+
+  "summary": "Developed AutoVal, an end-to-end data science solution for a nonprofit to analyze second-hand car pricing dynamics. Delivered a Power BI dashboard, a machine learning prediction tool, and an insights report.",
+
+  "details": [
+    "Partnered with a small team to clean and analyze a 1,445-record second-hand automobile dataset, standardizing 11+ features to ensure high-quality inputs for modeling.",
+    "Built an end-to-end price prediction model and deployed it using Streamlit, improving pricing realism by engineering key features such as mileage and number of owners.",
+    "Created visual dashboards using Power BI and matplotlib, and delivered a concise report summarizing key market insights and pricing trends to teammates and stakeholders."
   ],
-  "impact": "Delivered a multi-component system under a tight deadline, providing the nonprofit with actionable insights to support individuals navigating the used-car resale market. The dashboard and ML tool offered accessible, data-driven guidance and improved understanding of pricing patterns across vehicle conditions.",
-  "challenges": "Faced inconsistent and unstructured data across multiple features such as imperfections, repainting, and ownership categories. Balancing three deliverables—dashboard, ML model, and written report—under a limited timeline required strict prioritization and workflow management. Designing a model that reflected real-world relationships, such as how imperfections reduce price, required iterative experimentation and validation.",
-  "tags": ["machine learning", "dashboarding", "non-profit", "data science", "collaboration", "end-to-end project"]
-},
+
+  "skills": [
+    "Python", "Pandas", "NumPy", "Seaborn", "Matplotlib",
+    "scikit-learn", "Data Cleaning", "Feature Engineering",
+    "Random Forest", "Streamlit", "Power BI", "Dashboarding",
+    "Data Pipelines", "Collaboration", "Communication"
+  ],
+
+  "industry": ["Automobile", "Nonprofit"],
+
+  "impact": "Delivered a multi-component system under a tight deadline, providing the nonprofit with actionable insights to support individuals navigating the used-car resale market. The dashboard and ML tool improved understanding of pricing patterns across vehicle conditions.",
+
+  "challenges": "Handled inconsistent and unstructured data across features such as imperfections, repainting, and ownership categories. Balanced three deliverables—dashboard, ML model, and written report—under a limited timeline, requiring strict prioritization and iterative experimentation.",
+
+  "tags": ["machine learning", "dashboarding", "nonprofit", "data science", "collaboration", "end-to-end project"],
+
+  "content": "Developed AutoVal, an end-to-end data science solution for a nonprofit to analyze second-hand car pricing dynamics. Cleaned and analyzed a 1,445-record dataset, built a Streamlit-based price prediction model, and created Power BI dashboards summarizing key insights. Delivered actionable findings and improved understanding of pricing patterns."
+}
+,
 
 {
   "id": "exp_cinematch",
+  "type": "project",
+  "source": "personal",
   "title": "CineMatch: Multi-Model Movie Recommendation System",
-  "date": "2025-06",
-  "context": "personal project",
-  "description": "Developed CineMatch, a movie recommendation system featuring three distinct recommendation engines: a content-based recommender using TF-IDF and cosine similarity, an interactive quiz-based recommender gathering genre, language, and decade preferences, and a hybrid model combining both approaches for more accurate suggestions. The app fetches dynamic movie posters via the OMDb API and uses Streamlit's session state for smooth UI interactions.",
-  "actions": "Implemented TF-IDF vectorization, similarity computation, and quiz-based user input handling. Designed a hybrid model that merges content similarity with user preferences. Built a fully functional Streamlit application, integrated dynamic poster fetching through OMDb API, and ensured state management for seamless user experience. Continuously iterated on UI and recommendation logic to improve engagement.",
-  "skills": ["Python", "Pandas", "Scikit-learn", "Streamlit", "TF-IDF", "Cosine Similarity", "OMDb API", "UI/UX Design", "Hybrid Modeling"],
-  "impact": "Delivered a multi-engine recommendation system that provides personalized, engaging movie suggestions. Improved understanding of recommendation systems, user-centered design, and deploying interactive ML apps.",
-  "challenges": "Handled sparse and inconsistent movie metadata, tuned TF-IDF parameters and similarity thresholds for meaningful recommendations, and designed a hybrid system that effectively combines content-based and quiz-based filtering. Managing session state in Streamlit to maintain user interactions across the quiz and recommendations required careful handling.",
-  "tags": ["machine learning", "recommendation system", "NLP", "personal project", "user experience", "streamlit"]
-}, 
+  "date_range": "2025-06",
+
+  "summary": "Built CineMatch, a multi-engine movie recommendation system combining content-based filtering, quiz-based preference gathering, and a hybrid model. The app uses TF-IDF, cosine similarity, and user inputs to generate personalized movie suggestions, with dynamic poster fetching via the OMDb API and a Streamlit-based UI.",
+
+  "details": [
+    "Implemented TF-IDF vectorization and cosine similarity to build a content-based recommendation engine using movie metadata.",
+    "Designed an interactive quiz-based recommender that captures user preferences such as genre, language, and decade.",
+    "Developed a hybrid model that merges content similarity with user preferences to improve recommendation accuracy.",
+    "Built a fully functional Streamlit application with session state management for smooth multi-step user interactions.",
+    "Integrated OMDb API to fetch dynamic movie posters and enhance the user experience."
+  ],
+
+  "skills": [
+    "Python", "Pandas", "Scikit-learn", "Streamlit",
+    "TF-IDF", "Cosine Similarity", "OMDb API",
+    "UI/UX Design", "Hybrid Modeling", "Recommendation Systems"
+  ],
+
+  "industry": ["Entertainment", "Media", "Machine Learning", "Consumer Tech"],
+
+  "impact": "Delivered a multi-engine recommendation system that provides personalized and engaging movie suggestions. Strengthened understanding of recommendation algorithms, user-centered design, and deploying interactive ML applications.",
+
+  "challenges": "Handled sparse and inconsistent movie metadata, tuned TF-IDF parameters and similarity thresholds for meaningful recommendations, and designed a hybrid system that effectively combines content-based and quiz-based filtering. Managed Streamlit session state to maintain user interactions across quiz and recommendation steps.",
+
+  "tags": ["machine learning", "recommendation system", "NLP", "personal project", "user experience", "streamlit"],
+
+  "content": "Built CineMatch, a multi-model movie recommendation system using TF-IDF, cosine similarity, and user preference quizzes. Developed a hybrid recommender, integrated OMDb API for dynamic posters, and deployed an interactive Streamlit application with session state management."
+}
+, 
 {
   "id": "exp_theraplay",
+  "type": "project",
+  "source": "personal",
   "title": "TheraPlay: Platform for Connection and Growth",
-  "date": "2024-10",
-  "context": "hackathon/full-stack project",
-  "description": "Developed TheraPlay, a platform designed to foster anonymous, supportive connections for individuals facing personal challenges such as loneliness, grief, or career uncertainties. Features include secure profile setup, user matching, interactive chat (voice and text), collaborative drawing on a shared canvas, and AI-generated session insights.",
-  "actions": "Implemented frontend using HTML, CSS, and JavaScript for a sleek and dynamic user interface. Built backend functionality with Node.js used Socket.io for real-time chat, Fabric.js for collaborative drawing, and Firebase Authentication for secure sign-ins. Integrated ElevenLabs API for speech-to-text and text-to-speech features, and Perplexity AI to provide optional post-session insights. Designed the full workflow for user matching and interactive sessions, ensuring accessibility, privacy, and smooth real-time collaboration.",
-  "skills": ["HTML", "CSS", "JavaScript", "Firebase", "Socket.io", "Fabric.js", "Real-Time Collaboration", "AI Integration", "Generative AI", "Full-Stack Development", "User Experience Design"],
-  "impact": "Created a safe and engaging platform enabling users to connect anonymously, express themselves creatively, and receive AI-driven insights. Supports emotional well-being and personal growth through innovative, interactive tools.",
-  "challenges": "Integrating real-time voice/text chat with collaborative drawing while maintaining state consistency was challenging. Ensuring secure authentication and privacy for users required careful Firebase implementation. Combining multiple APIs (ElevenLabs, Perplexity AI) and maintaining a smooth user experience demanded iterative testing and problem-solving.",
-  "tags": ["full-stack", "real-time collaboration", "AI", "generative AI", "user experience", "mental health", "personal project"]
-},
+  "date_range": "2024-10",
+
+  "summary": "Developed TheraPlay, a platform enabling anonymous, supportive connections for individuals facing personal challenges. Features include secure profiles, user matching, real-time chat (voice and text), collaborative drawing, and AI-generated session insights.",
+
+  "details": [
+    "Implemented a responsive frontend using HTML, CSS, and JavaScript to create a clean and intuitive user interface.",
+    "Built backend functionality with Node.js, integrating Socket.io for real-time chat and Fabric.js for collaborative drawing.",
+    "Implemented Firebase Authentication to ensure secure and private user sign-ins.",
+    "Integrated ElevenLabs API for speech-to-text and text-to-speech capabilities, enhancing accessibility.",
+    "Connected Perplexity AI to generate optional post-session insights for users.",
+    "Designed the full workflow for user matching and interactive sessions, ensuring smooth real-time collaboration and privacy."
+  ],
+
+  "skills": [
+    "HTML", "CSS", "JavaScript", "Firebase", "Socket.io", "Fabric.js",
+    "Real-Time Collaboration", "AI Integration", "Generative AI",
+    "Full-Stack Development", "User Experience Design"
+  ],
+
+  "industry": [
+    "Mental Health", "Health Tech", "Social Platforms",
+    "Real-Time Collaboration", "AI Applications"
+  ],
+
+  "impact": "Created a safe and engaging platform that enables users to connect anonymously, express themselves creatively, and receive AI-driven insights. Supports emotional well-being and personal growth through interactive, accessible tools.",
+
+  "challenges": "Integrated real-time voice/text chat with collaborative drawing while maintaining state consistency. Ensured secure authentication and privacy using Firebase. Combined multiple APIs (ElevenLabs, Perplexity AI) while maintaining a smooth user experience through iterative testing and refinement.",
+
+  "tags": [
+    "full-stack", "real-time collaboration", "AI", "generative AI",
+    "user experience", "mental health", "personal project"
+  ],
+
+  "content": "Built TheraPlay, a mental health–focused platform with real-time chat, collaborative drawing, and AI-generated insights. Implemented full-stack features using JavaScript, Node.js, Firebase, Socket.io, Fabric.js, and ElevenLabs API to support anonymous, supportive user interactions."
+}
+,
 {
   "id": "exp_medpill_ai",
+  "type": "project",
+  "source": "hackathon",
   "title": "Medpill AI: Medicine Verification Tool",
-  "date": "2025-06",
-  "context": "hackathon (Terrahacks) collaborative project",
-  "description": "Competed at Terrahacks to solve a healthcare problem: nearly 1 million people die annually from consuming fake or incorrect medicines. Built Medpill AI, a tool that helps users verify if their medicine is genuine using image recognition and similarity search.",
-  "actions": "Focused on OCR (Optical Character Recognition) to extract text from medicine images using an OCR API. Designed and implemented a medicine verification strategy: scraped reference images online, ran embeddings-based similarity searches, and combined results to determine authenticity. Collaborated closely with teammates for ideation, testing, and feedback. Integrated technical solutions under tight hackathon deadlines.",
-  "skills": ["Python", "OCR", "Embeddings", "Similarity Search", "Web Scraping", "Hackathon Collaboration", "Problem Solving", "Teamwork", "Rapid Prototyping"],
-  "impact": "Developed a working prototype that can verify medicines and raise awareness about counterfeit drugs. Gained experience in tackling high-impact healthcare challenges, working in a team, and rapid product development.",
-  "challenges": "Extracting accurate text from diverse medicine images was difficult due to variations in fonts, packaging, and lighting. Designing a reliable verification strategy with limited reference data required creative problem-solving. Balancing time constraints and coordinating tasks among team members in a high-pressure hackathon environment was challenging.",
-  "tags": ["hackathon", "OCR", "healthcare", "teamwork", "rapid prototyping", "embeddings", "personal project"]
-},
+  "date_range": "2025-06",
+
+  "summary": "Built Medpill AI during Terrahacks to address the global issue of counterfeit medicines. Developed a prototype that verifies medicine authenticity using OCR, embeddings-based similarity search, and scraped reference images.",
+
+  "details": [
+    "Implemented OCR-based text extraction from medicine images using an OCR API to support authenticity checks.",
+    "Designed a verification pipeline combining web-scraped reference images, embeddings, and similarity search to detect counterfeit medicines.",
+    "Collaborated with teammates on ideation, testing, and rapid iteration under strict hackathon time constraints.",
+    "Integrated multiple technical components into a functional prototype capable of assisting users in verifying medicine authenticity."
+  ],
+
+  "skills": [
+    "Python", "OCR", "Embeddings", "Similarity Search",
+    "Web Scraping", "Hackathon Collaboration",
+    "Problem Solving", "Teamwork", "Rapid Prototyping"
+  ],
+
+  "industry": [
+    "Healthcare", 
+    "Health Tech", 
+    "AI Applications", 
+    "Computer Vision", 
+    "Public Safety"
+  ],
+
+  "impact": "Delivered a functional prototype that helps users verify medicines and raises awareness about counterfeit drugs. Strengthened experience in healthcare-focused problem solving, rapid prototyping, and collaborative development.",
+
+  "challenges": "Extracting accurate text from diverse medicine images was difficult due to variations in fonts, packaging, and lighting. Designing a reliable verification strategy with limited reference data required creative experimentation. Coordinating tasks under hackathon pressure demanded efficient teamwork and prioritization.",
+
+  "tags": [
+    "hackathon", "OCR", "healthcare", "teamwork",
+    "rapid prototyping", "embeddings", "computer vision"
+  ],
+
+  "content": "Built Medpill AI, a healthcare-focused tool that verifies medicine authenticity using OCR, embeddings, and similarity search. Developed during Terrahacks as a rapid prototype addressing counterfeit drug risks."
+}
+,
 {
   "id": "exp_coolcucumbers",
+  "type": "project",
+  "source": "team",
   "title": "CoolCucumbers: Insurance Prediction & Risk Assessment App",
-  "date": "2025-11",
-  "context": "team project, UW CS Club Project Program",
-  "description": "Participated in the CS Club's Project Program at UWaterloo, developing CoolCucumbers, an application that helps homebuyers estimate future insurance prices and assists insurance companies in improving risk quantification to reduce unexpected financial losses. Our team won Best Pitch at the program, recognizing both the potential of our solution and the strength of our presentation.",
-  "actions": "Scraped historical environmental and insurance-related data, cleaned and formatted it for modeling, and trained predictive models to estimate future environmental conditions and insurance prices. Collaborated closely with team members to integrate data, develop the app MVP, and prepare a compelling pitch for mentors and judges.",
-  "skills": [ "React", "Python", "Data Scraping", "Data Cleaning", "Predictive Modeling", "Machine Learning", "Team Collaboration", "Presentation Skills", "MVP Development"],
-  "impact": "Delivered a working MVP in just 3 weeks that demonstrated strong potential for real-world application. Winning Best Pitch at UWaterloo highlighted our ability to build and present impactful solutions under tight timelines.",
-  "challenges": "Balancing school commitments while building a solid 3-week project was challenging. Integrating multiple data sources for accurate modeling, designing a predictive pipeline, and coordinating tasks among teammates under time pressure required careful planning and collaboration.",
-  "tags": ["team project", "machine learning", "predictive modeling", "data science", "presentation", "rapid prototyping", "award-winning"]
-}, 
+  "date_range": "2025-11",
+
+  "summary": "Developed CoolCucumbers as part of the UWaterloo CS Club Project Program—an application that predicts future insurance prices and helps insurance companies improve risk assessment. The project won Best Pitch for its real-world potential and strong presentation.",
+
+  "details": [
+    "Scraped and cleaned historical environmental and insurance-related datasets to prepare high-quality inputs for predictive modeling.",
+    "Trained machine learning models to estimate future environmental conditions and insurance prices, supporting risk quantification.",
+    "Collaborated with teammates to integrate data pipelines, build the MVP, and refine the user-facing components.",
+    "Prepared and delivered a compelling pitch to mentors and judges, highlighting the app’s value for both homebuyers and insurers."
+  ],
+
+  "skills": [
+    "React", "Python", "Data Scraping", "Data Cleaning",
+    "Predictive Modeling", "Machine Learning",
+    "Team Collaboration", "Presentation Skills", "MVP Development"
+  ],
+
+  "industry": [
+    "Insurance Tech",
+    "FinTech",
+    "Risk Analytics",
+    "Environmental Data",
+    "Machine Learning Applications"
+  ],
+
+  "impact": "Delivered a functional MVP in just 3 weeks, demonstrating strong potential for real-world use in insurance pricing and risk assessment. Winning Best Pitch validated the solution’s impact and the team's ability to execute under tight timelines.",
+
+  "challenges": "Balancing academic workload with a fast-paced 3-week development cycle was demanding. Integrating multiple data sources, designing a predictive pipeline, and coordinating tasks across the team required strong planning and communication.",
+
+  "tags": [
+    "team project", "machine learning", "predictive modeling",
+    "data science", "presentation", "rapid prototyping", "award-winning"
+  ],
+
+  "content": "Built CoolCucumbers, an insurance prediction and risk assessment app using machine learning and environmental data. Developed as a team project for the UWaterloo CS Club Program and won Best Pitch for its real-world potential."
+}
+, 
 {
   "id": "exp_physics_pulse",
+  "type": "role",
+  "source": "startup",
   "title": "Researcher & Marketing Manager, Physics Pulse",
-  "date": "2024-08 to 2025-08",
-  "context": "hybrid role at startup/early-stage organization",
-  "description": "One of the first members of Physics Pulse, contributing to both research and marketing. Expanded the brand, including updates to the logo, while creating content that made complex physics concepts accessible to a wider audience.",
-  "actions": "Researched physics topics in-depth and translated findings into engaging articles. Collaborated with the Content Creator Team to produce visually appealing, informative content. Managed social media presence, curated posts, interacted with followers, and crafted compelling captions. Played a key role in expanding the Physics Pulse brand and visual identity.",
-  "skills": ["Research", "Physics Communication", "Social Media Management", "Content Creation", "Collaboration", "Marketing", "Branding", "Audience Engagement"],
-  "impact": "Helped grow Physics Pulse's online presence, engage a wider audience with physics content, and strengthen the organization's brand identity.",
-  "challenges": "Translating complex physics topics into engaging, accessible content for a general audience. Managing consistent social media engagement while coordinating with a distributed content creation team. Establishing brand identity and updating the logo to align with growth goals.",
-  "tags": ["research", "marketing", "content creation", "branding", "social media", "early-stage team", "leadership"]
-},
+  "date_range": "2024-08 to 2025-08",
+
+  "summary": "Served as one of the first members of Physics Pulse, contributing to both research and marketing. Created accessible physics content, expanded the brand identity, and strengthened the organization’s online presence through strategic communication and audience engagement.",
+
+  "details": [
+    "Researched complex physics topics and translated them into engaging, easy-to-understand articles for a general audience.",
+    "Collaborated with the Content Creator Team to produce visually appealing and informative educational content.",
+    "Managed social media presence by curating posts, interacting with followers, and crafting compelling captions to boost engagement.",
+    "Contributed to brand development by updating the logo and refining the visual identity to support organizational growth."
+  ],
+
+  "skills": [
+    "Research", "Physics Communication", "Social Media Management",
+    "Content Creation", "Collaboration", "Marketing", "Branding",
+    "Audience Engagement"
+  ],
+
+  "industry": [
+    "Education",
+    "Science Communication",
+    "Media & Publishing",
+    "EdTech",
+    "Early-Stage Startups"
+  ],
+
+  "impact": "Helped grow Physics Pulse’s online presence, broadened audience engagement with physics content, and strengthened the brand identity of the early-stage organization.",
+
+  "challenges": "Translating complex physics topics into accessible content for a general audience. Maintaining consistent social media engagement while coordinating with a distributed content team. Establishing a cohesive brand identity and updating the logo to align with growth goals.",
+
+  "tags": [
+    "research", "marketing", "content creation", "branding",
+    "social media", "early-stage team", "leadership"
+  ],
+
+  "content": "Contributed to Physics Pulse as a researcher and marketing manager, creating accessible physics content, managing social media, and strengthening the brand identity of an early-stage science communication organization."
+}
+,
 {
   "id": "exp_dawn_graphic_design",
+  "type": "role",
+  "source": "non-profit",
   "title": "Graphic Designer, DAWN",
-  "date": "2025-05 to 2025-11",
-  "context": "non-profit volunteer role",
-  "description": "Contributed as a graphic designer for DAWN, a Toronto-based non-profit combating human trafficking, creating engaging visual content to educate the public, debunk myths, and raise awareness.",
-  "actions": "Designed informative and visually appealing content for Instagram and other platforms. Simplified complex information into accessible graphics, ensuring clarity and engagement. Collaborated with team members to align designs with campaigns and organizational messaging.",
-  "skills": ["Graphic Design", "Social Media Content", "Visual Communication", "Awareness Campaigns", "Collaboration", "Creativity", "Non-Profit Work"],
-  "impact": "Enhanced DAWN's audience engagement and educational outreach, helping to foster a proactive, informed community. Contributed to raising public awareness and amplifying the non-profit's impact in combating human trafficking.",
-  "challenges": "Balancing creativity with accuracy and sensitivity due to the serious nature of human trafficking topics. Ensuring content is visually compelling while remaining informative and aligned with DAWN's mission.",
-  "tags": ["non-profit", "graphic design", "social impact", "awareness campaigns", "volunteer work", "visual communication"]
-},
+  "date_range": "2025-05 to 2025-11",
+
+  "summary": "Served as a graphic designer for DAWN, a Toronto-based non-profit focused on combating human trafficking. Created educational and awareness-driven visual content to inform the public, debunk myths, and support advocacy efforts.",
+
+  "details": [
+    "Designed informative and visually appealing graphics for Instagram and other platforms to support awareness campaigns.",
+    "Simplified complex and sensitive information into accessible visual formats while maintaining accuracy and clarity.",
+    "Collaborated with team members to align designs with campaign goals, messaging, and organizational branding.",
+    "Contributed to the development of consistent visual identity elements across DAWN’s outreach materials."
+  ],
+
+  "skills": [
+    "Graphic Design", "Social Media Content", "Visual Communication",
+    "Awareness Campaigns", "Collaboration", "Creativity", "Non-Profit Work"
+  ],
+
+  "industry": [
+    "Non-Profit",
+    "Social Impact",
+    "Advocacy & Awareness",
+    "Media & Communications",
+    "Human Rights"
+  ],
+
+  "impact": "Enhanced DAWN’s audience engagement and educational outreach by producing compelling visual content. Helped raise public awareness and amplify the organization’s mission to combat human trafficking.",
+
+  "challenges": "Balancing creativity with sensitivity due to the serious nature of human trafficking topics. Ensuring visuals remained informative, accurate, and aligned with DAWN’s mission while still being engaging for social media audiences.",
+
+  "tags": [
+    "non-profit", "graphic design", "social impact",
+    "awareness campaigns", "volunteer work", "visual communication"
+  ],
+
+  "content": "Created educational and awareness-focused visual content for DAWN, a non-profit combating human trafficking. Designed social media graphics, simplified complex information, and supported advocacy campaigns through strong visual communication."
+}
+,
 {
   "id": "exp_focus_youth_finance",
+  "type": "role",
+  "source": "non-profit",
   "title": "Finance Associate, Focus Youth",
-  "date": "2024-09 to 2025-06",
-  "context": "non-profit / youth-focused event",
-  "description": "Worked as a Finance Associate at Focus Youth, organizing and managing marketing and fundraising efforts for a high-impact event targeting around 4000 high school students.",
-  "actions": "Coordinated fundraising activities and secured sponsorships to support event execution. Managed a team of 20 members to ensure tasks were completed efficiently. Liaised with sponsors and stakeholders to guarantee smooth execution and maximize event impact. Assisted in marketing initiatives to promote the event and engage the audience.",
-  "skills": ["Fundraising", "Sponsorship Management", "Event Coordination", "Teamwork", "Stakeholder Communication", "Marketing", "Leadership"],
-  "impact": "Successfully gathered funds and sponsorships, enabling a large-scale event to reach thousands of students. Ensured smooth operations and strong engagement, enhancing the organization’s presence and credibility among youth audiences.",
-  "challenges": "Coordinating multiple stakeholders and team members simultaneously while meeting fundraising goals. Balancing marketing, sponsorships, and operational tasks under tight deadlines to ensure a successful event.",
-  "tags": ["non-profit", "fundraising", "event management", "teamwork", "stakeholder coordination", "leadership"]
-},
+  "date_range": "2024-09 to 2025-06",
+
+  "summary": "Served as a Finance Associate for Focus Youth, supporting fundraising, sponsorship management, and marketing efforts for a large-scale youth event reaching approximately 4,000 high school students. Played a key role in coordinating operations and ensuring successful event execution.",
+
+  "details": [
+    "Coordinated fundraising activities and secured sponsorships to support event execution and logistics.",
+    "Managed a team of 20 members, ensuring tasks were completed efficiently and aligned with event goals.",
+    "Liaised with sponsors and stakeholders to maintain strong relationships and guarantee smooth event operations.",
+    "Assisted in marketing initiatives to promote the event and engage thousands of high school students."
+  ],
+
+  "skills": [
+    "Fundraising", "Sponsorship Management", "Event Coordination",
+    "Teamwork", "Stakeholder Communication", "Marketing", "Leadership"
+  ],
+
+  "industry": [
+    "Non-Profit",
+    "Youth Programs",
+    "Event Management",
+    "Community Engagement",
+    "Fundraising & Development"
+  ],
+
+  "impact": "Secured essential funds and sponsorships that enabled a large-scale youth event to reach thousands of students. Strengthened organizational credibility and engagement through effective coordination and communication.",
+
+  "challenges": "Coordinating multiple stakeholders and team members while meeting fundraising goals. Balancing marketing, sponsorship outreach, and operational tasks under tight deadlines to ensure a successful event.",
+
+  "tags": [
+    "non-profit", "fundraising", "event management",
+    "teamwork", "stakeholder coordination", "leadership"
+  ],
+
+  "content": "Worked as a Finance Associate for Focus Youth, coordinating fundraising, sponsorships, and marketing for a large-scale youth event. Managed a team of 20, liaised with stakeholders, and ensured smooth execution for an event reaching 4,000 students."
+}
+,
 {
   "id": "exp_tutor",
+  "type": "role",
+  "source": "part-time",
   "title": "Part-Time Tutor (Science & Math, Grade 9)",
-  "date": "2024-09 to 2025-06",
-  "context": "part-time employment / academic support",
-  "description": "Tutored grade 9 students in science and math, providing personalized instruction to enhance understanding, academic growth, and problem-solving skills.",
-  "actions": "Developed individualized lesson plans tailored to each student's needs. Delivered one-on-one tutoring sessions focused on clarifying concepts, fostering critical thinking, and reinforcing problem-solving strategies. Monitored student progress and adapted teaching methods to ensure continuous improvement.",
-  "skills": ["Tutoring", "Lesson Planning", "Academic Mentoring", "Science Education", "Math Education", "Critical Thinking", "Problem Solving", "Student Assessment"],
-  "impact": "Helped students improve academically, including a grade 9 student who went from failing to achieving 70% in 5 weeks. Enhanced students' understanding of complex concepts and nurtured independent learning skills.",
-  "challenges": "Adapting teaching approaches to fit different learning styles and pace. Ensuring consistent improvement within a limited time frame while maintaining student engagement and confidence.",
-  "tags": ["tutoring", "education", "mentoring", "academic support", "personalized learning", "critical thinking"]
-},
+  "date_range": "2024-09 to 2025-06",
+
+  "summary": "Provided one-on-one tutoring in grade 9 science and math, delivering personalized instruction to strengthen conceptual understanding, academic performance, and problem-solving skills.",
+
+  "details": [
+    "Developed individualized lesson plans tailored to each student's learning needs and academic goals.",
+    "Delivered one-on-one tutoring sessions focused on clarifying concepts, fostering critical thinking, and reinforcing problem-solving strategies.",
+    "Monitored student progress and adapted teaching methods to ensure continuous improvement and sustained engagement.",
+    "Supported students in building confidence and developing independent learning habits."
+  ],
+
+  "skills": [
+    "Tutoring", "Lesson Planning", "Academic Mentoring",
+    "Science Education", "Math Education", "Critical Thinking",
+    "Problem Solving", "Student Assessment"
+  ],
+
+  "industry": [
+    "Education",
+    "Tutoring & Academic Support",
+    "EdTech (Instructional Skills)",
+    "Youth Development"
+  ],
+
+  "impact": "Helped students improve academically, including supporting a grade 9 student who progressed from failing to achieving 70% in just 5 weeks. Strengthened students’ conceptual understanding and nurtured independent learning skills.",
+
+  "challenges": "Adapting teaching approaches to different learning styles and paces. Ensuring consistent improvement within limited time frames while maintaining student engagement and confidence.",
+
+  "tags": [
+    "tutoring", "education", "mentoring",
+    "academic support", "personalized learning", "critical thinking"
+  ],
+
+  "content": "Provided personalized tutoring in grade 9 science and math, developing tailored lesson plans, delivering one-on-one instruction, and helping students improve academic performance and problem-solving skills."
+}
+,
 {
   "id": "exp_crackbig",
+  "type": "project",
+  "source": "personal",
   "title": "CrackBig: University Interview Simulator",
-  "date": "2025-09",
-  "context": "personal full-stack project",
-  "description": "Developed CrackBig, an AI-driven web app that simulates university interviews, allowing high school students to practice unlimited interviews, receive feedback, and build confidence.",
-  "actions": "Built the frontend with React and the backend with Node.js. Integrated session tracking using React hooks and Node.js to provide personalized feedback and progress insights. Managed deployment on Vercel and Render, resolved key API integration issues, and documented fixes for smoother future development.",
-  "skills": ["React", "Node.js", "API Integration", "Session Management", "Full-Stack Development", "Deployment (Vercel, Render)", "AI Integration", "Problem Solving", "Web App Development"],
-  "impact": "Delivered a live, AI-driven interview simulation platform helping students practice and improve their university interview skills. The app is currently in progress, continuously evolving with new features and improvements.",
-  "challenges": "Setting up video questions for interview simulations was a major challenge. Resolving deployment and API integration issues while ensuring session tracking worked reliably. Designing a scalable system to handle multiple sessions and personalized feedback for each user while maintaining a smooth user experience.",
-  "tags": ["full-stack", "AI", "web app", "education technology", "deployment", "React", "Node.js", "personal project"]
-},
+  "date_range": "2025-09",
+
+  "summary": "Developed CrackBig, an AI-driven web application that simulates university interviews, enabling high school students to practice unlimited interview sessions, receive feedback, and build confidence through personalized insights.",
+
+  "details": [
+    "Built the frontend using React and developed backend services with Node.js to support interview simulation workflows.",
+    "Integrated session tracking using React hooks and Node.js to deliver personalized feedback and progress insights for each user.",
+    "Managed deployment across Vercel and Render, resolving key API integration issues and documenting fixes for future scalability.",
+    "Designed a scalable system architecture capable of handling multiple interview sessions and individualized user experiences."
+  ],
+
+  "skills": [
+    "React", "Node.js", "API Integration", "Session Management",
+    "Full-Stack Development", "Deployment (Vercel, Render)",
+    "AI Integration", "Problem Solving", "Web App Development"
+  ],
+
+  "industry": [
+    "EdTech",
+    "AI Applications",
+    "Interview Preparation",
+    "Web Development",
+    "Youth & Student Support"
+  ],
+
+  "impact": "Delivered a live, AI-driven interview simulation platform that helps students practice and improve their university interview skills. The project continues to evolve with new features and enhancements.",
+
+  "challenges": "Setting up video-based interview questions and ensuring smooth playback. Resolving deployment and API integration issues while maintaining reliable session tracking. Designing a scalable system to support multiple sessions and personalized feedback without compromising user experience.",
+
+  "tags": [
+    "full-stack", "AI", "web app", "education technology",
+    "deployment", "React", "Node.js", "personal project"
+  ],
+
+  "content": "Developed CrackBig, an AI-powered university interview simulator built with React and Node.js. Implemented session tracking, resolved deployment and API issues, and created a scalable system to support personalized interview practice for students."
+}
+,
 {
   "id": "exp_wato_project",
-  "title": "Wato Design Team Entrance Project",
-  "date": "2025-09",
-  "context": "personal project / entrance assignment",
-  "description": "Completed a hands-on entrance assignment for the Watonomous design team, coding a robot from scratch under a tight deadline. Learned C# and ROS2 in one week to implement hardware-level programming and testing.",
-  "actions": "Used AI (ChatGPT) to quickly grasp C# and ROS2 basics, then coded and tested the robot step-by-step. Documented hurdles and solutions, iteratively improving the code. Dedicated 3–4 days in intensive work sessions to complete the project before the deadline, ensuring a functional robot demonstration.",
-  "skills": ["C#", "ROS2", "Hardware Programming", "Robot Coding", "Problem Solving", "Self-Learning", "AI-Assisted Learning", "Iterative Development", "Time Management"],
-  "impact": "Successfully completed the robot coding assignment under a week, gaining confidence in rapid skill acquisition and hardware-level programming. Demonstrated the ability to learn new technologies quickly and apply them in real-world problems.",
-  "challenges": "Learning C# and ROS2 from scratch within a week while implementing hardware-level functionality. Troubleshooting robot code in real-time and ensuring each component worked correctly. Maintaining focus and consistent effort over intensive work sessions.",
-  "tags": ["hardware", "robotics", "self-learning", "AI-assisted learning", "rapid skill acquisition", "ROS2", "C#"]
+  "type": "role",
+  "source": "student team",
+  "title": "Software Developer, Watonomous",
+  "date_range": "2025-09",
+
+  "summary": "Worked on the Watonomous design team, contributing to robotics software development under tight deadlines. Learned C# and ROS2 in one week and implemented core planning functionality for autonomous navigation.",
+
+  "details": [
+    "Implemented an A*-based path-planning algorithm in C++ to compute obstacle-aware routes from grid maps, supporting dynamic goal updates.",
+    "Designed and integrated a modular planning node with real-time data subscriptions, state handling, and periodic replanning within a robotics software stack.",
+    "Learned C# and ROS2 fundamentals in one week to support hardware-level programming and testing.",
+    "Documented development hurdles and solutions while iteratively improving system reliability."
+  ],
+
+  "skills": [
+    "C#", "C++", "ROS2", "Path Planning", "A* Algorithm",
+    "Hardware Programming", "Robot Coding", "Problem Solving",
+    "Self-Learning", "AI-Assisted Learning", "Iterative Development",
+    "Time Management"
+  ],
+
+  "industry": [
+    "Robotics",
+    "Autonomous Systems",
+    "Hardware Engineering",
+    "AI-Assisted Development",
+    "STEM Education"
+  ],
+
+  "impact": "Successfully implemented core planning functionality and completed the robotics assignment in under a week. Demonstrated rapid skill acquisition, strong problem-solving, and the ability to contribute to real-world autonomous systems.",
+
+  "challenges": "Learning C# and ROS2 from scratch within a week while implementing hardware-level functionality. Troubleshooting robot code in real time and ensuring each component worked correctly under tight deadlines.",
+
+  "tags": [
+    "hardware", "robotics", "self-learning",
+    "AI-assisted learning", "rapid skill acquisition",
+    "ROS2", "C#", "path planning"
+  ],
+
+  "content": "Developed robotics planning components for Watonomous, implementing A* path planning in C++ and integrating a modular planning node with ROS2. Learned C# and ROS2 in one week and contributed to hardware-level programming and testing."
 }
+
 
 ]
 
